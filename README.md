@@ -74,7 +74,27 @@ for (const filename of filenames) {
 ## [Third Party Modules](https://deno.land/x)
 
 - [How do I use modules on deno.land/x?](https://deno.land/x#info)
-- [How to keep the version of packages in Deno](https://stackoverflow.com/questions/64496938/how-to-keep-the-version-of-packages-in-deno)
+
+### import
+
+#### [Local Import](https://deno.land/manual@v1.11.0/examples/import_export#local-import)
+
+```ts
+import { add, multiply } from "./arithmetic.ts"
+```
+
+#### [Remote Import](https://deno.land/manual@v1.11.0/examples/import_export#remote-import)
+
+```ts
+import {
+  add,
+  multiply,
+} from "https://x.nest.land/ramda@0.27.0/source/index.js"
+```
+
+#### how to keep version
+
+- [How to keep the version of packages in Deno: stackoverflow](https://stackoverflow.com/questions/64496938/how-to-keep-the-version-of-packages-in-deno)
   - [Import maps](https://deno.land/manual/linking_to_external_code/import_maps)
 
 ## Deno on docker container
@@ -85,4 +105,3 @@ for (const filename of filenames) {
 
 - [Deno for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
   - open command palette, and enter "Deno: Initialize Workspace Configuration"
-  
