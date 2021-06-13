@@ -76,3 +76,13 @@ for (const filename of filenames) {
 - [How do I use modules on deno.land/x?](https://deno.land/x#info)
 - [How to keep the version of packages in Deno](https://stackoverflow.com/questions/64496938/how-to-keep-the-version-of-packages-in-deno)
   - [Import maps](https://deno.land/manual/linking_to_external_code/import_maps)
+
+## Deno on docker container
+
+- [denoland / deno_docker](https://github.com/denoland/deno_docker)
+
+## edit by vscode
+
+- [Deno for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
+  - open command palette, and enter "Deno: Initialize Workspace Configuration"
+  
