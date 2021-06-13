@@ -39,7 +39,7 @@ Deno is secure by default. Therefore, unless you specifically enable it, a deno 
 - [Permissions allow-list](https://deno.land/manual@v1.11.0/getting_started/permissions#permissions-allow-list)
 - [Network access](https://deno.land/manual@v1.11.0/getting_started/permissions#network-access)
 
-### Network access sample: [Making an HTTP request](https://deno.land/manual/getting_started/first_steps#making-an-http-request)
+### Network access example: [Making an HTTP request](https://deno.land/manual/getting_started/first_steps#making-an-http-request)
 
 ```ts
 const url: string = Deno.args[0]
@@ -55,7 +55,7 @@ await Deno.stdout.write(body)
 ...
 ```
 
-### [Reading a file sample](https://deno.land/manual/getting_started/first_steps#reading-a-file)
+### [Reading a file example](https://deno.land/manual/getting_started/first_steps#reading-a-file)
 
 ```ts
 const filenames: string[] = Deno.args
@@ -92,7 +92,7 @@ import {
 } from "https://x.nest.land/ramda@0.27.0/source/index.js"
 ```
 
-#### how to keep version
+#### how to keep version of modules
 
 - [How to keep the version of packages in Deno: stackoverflow](https://stackoverflow.com/questions/64496938/how-to-keep-the-version-of-packages-in-deno)
   - [Import maps](https://deno.land/manual/linking_to_external_code/import_maps)
