@@ -26,7 +26,7 @@ console.log('hello Deno')
 ```
 
 ```shell
-> deno run hello-Deno.ts
+> deno run src/hello-deno.ts
 Check file:///your-repo/hello-Deno.ts
 hello Deno
 ```
@@ -50,7 +50,7 @@ await Deno.stdout.write(body)
 ```
 
 ```shell
-> deno run --allow-net=example.com curl.ts https://example.com
+> deno run --allow-net=example.com src/curl.ts https://example.com
 <!doctype html>
 ...
 ```
