@@ -55,6 +55,22 @@ await Deno.stdout.write(body)
 ...
 ```
 
+### [Reading a file sample](https://deno.land/manual/getting_started/first_steps#reading-a-file)
+
+```ts
+const filenames: string[] = Deno.args
+for (const filename of filenames) {
+  const file = await Deno.open(filename)
+  await Deno.copy(file, Deno.stdout)
+  file.close()
+}
+```
+
+```shell
+> deno run --allow-read src/cat.ts ./README.md
+# hello-deno
+```
+
 ## [Third Party Modules](https://deno.land/x)
 
 - [How do I use modules on deno.land/x?](https://deno.land/x#info)
